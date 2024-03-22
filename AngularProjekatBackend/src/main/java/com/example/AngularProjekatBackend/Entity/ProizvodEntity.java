@@ -1,4 +1,4 @@
-package Entity;
+package com.example.AngularProjekatBackend.Entity;
 
 import jakarta.persistence.*;
 

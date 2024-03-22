@@ -1,6 +1,7 @@
-package Entity;
+package com.example.AngularProjekatBackend.Entity;
 
 import jakarta.persistence.*;
+import org.springframework.context.annotation.Bean;
 
 import java.util.Objects;
 
