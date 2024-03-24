@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.example.AngularProjekatBackend.Entity"})
+@ComponentScan(basePackages = {"com.example.AngularProjekatBackend.*"})
 public class AngularProjekatBackendApplication {
 
 	public static void main(String[] args) {

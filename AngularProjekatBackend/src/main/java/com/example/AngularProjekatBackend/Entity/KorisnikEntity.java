@@ -2,9 +2,10 @@ package com.example.AngularProjekatBackend.Entity;
 
 import jakarta.persistence.*;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.util.Objects;
-
+@Component
 @Entity
 @Table(name = "korisnik", schema = "project", catalog = "")
 public class KorisnikEntity {

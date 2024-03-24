@@ -26,4 +26,14 @@ public class KorisnikController {
             return ResponseEntity.badRequest().body(ex.getMessage());
         }
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestBody KorisnikEntity korisnik){
+        try {
+            String poruka = korisnikService.login(korisnik.getUsername(), korisnik.getPassword());
+            return ResponseEntity.ok(poruka);
+        } catch (RuntimeException ex){
+            return ResponseEntity.badRequest().body(ex.getMessage());
+        }
+    }
 }
